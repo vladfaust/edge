@@ -1,0 +1,11 @@
+!!!
+%html
+  %head
+    %meta{ content: 'IE=edge', 'http-equiv': 'X-UA-Compatible' }
+    %meta{ charset: 'utf-8' }
+    %meta{ content: 'width=device-width, initial-scale=1, shrink-to-fit=no', name: 'viewport' }
+    %title= @title || 'Simple template'
+    = stylesheet_link_tag    :site
+    = javascript_include_tag :all
+  %body{ class: @page_classes }
+    = yield
